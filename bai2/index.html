@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Convert currency</title>
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <script src="js/lib/bootstrap.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .slider {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 700px;
+            height: 60px;
+            padding: 30px;
+            padding-left: 40px;
+            background: #fcfcfc;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 15px 40px #7E6D5766;
+        }
+        .slider p {
+            font-size: 26px;
+            font-weight: 600;
+            font-family: Open Sans;
+            padding-left: 30px;
+            color: black;
+            width: 170px;
+        }
+        .slider input[type="range"] {
+            -webkit-appearance:none !important;
+            width: 420px;
+            height: 2px;
+            background: black;
+            border: none;
+            outline: none;
+        }
+        .slider input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none !important;
+            width: 30px;
+            height:30px;
+            background: black;
+            border: 2px solid black;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .slider input[type="range"]::-webkit-slider-thumb:hover {
+            background: black;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-5 align-items-center">
+    <form name="convert-temp">
+        <div class="slider">
+            <input type="range" min="0" max="100" value="100" name="value">
+            <p id="rangeValue">100 &deg;F</p>
+            <p style="width: 50px">=</p>
+            <p class="js-result">37.78 &deg;C</p>
+        </div>
+    </form>
+</div>
+
+<script src="js/lib/jquery-3.6.3.min.js"></script>
+<script src="js/convert-temp.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Triangle area</title>
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <script src="js/lib/bootstrap.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5 align-items-center">
+    <form class="row g-3" name="triangle-are">
+        <div class="col-auto">
+            <label for="edgeA" class="col-form-label">Edge A</label>
+            <input type="text" name="edgeA" class="form-control" id="edgeA" placeholder="Edge A">
+        </div>
+        <div class="col-auto">
+            <label for="edgeB" class="col-form-label">Edge B</label>
+            <input type="text" name="edgeB" class="form-control" id="edgeB" placeholder="Edge B">
+        </div>
+        <div class="col-auto">
+            <label for="edgeC" class="col-form-label">Edge C</label>
+            <input type="text" name="edgeC" class="form-control" id="edgeC" placeholder="Edge C">
+        </div>
+        <div class="col-auto">
+            <label for="result" class="col-form-label">Result</label>
+            <input type="text" name="result" class="form-control" id="result" value="2222" disabled>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary js-btn-calculation">Calculation</button>
+        </div>
+    </form>
+</div>
+
+<script src="js/lib/jquery-3.6.3.min.js"></script>
+<script src="js/triangle-area.js"></script>
+</body>
+</html>
